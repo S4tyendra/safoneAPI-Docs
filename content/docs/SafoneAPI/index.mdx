@@ -1,0 +1,140 @@
+---
+title: SafoneAPI
+description: Asynchronous Python Wrapper For SafoneAPI
+---
+
+
+<Cards>
+  <Card title="Github Repo" href="https://Github.com/asmsafone/safoneApi" />
+  <Card title="pypi" href="https://pypi.org/project/safoneApi" />
+</Cards>
+
+<br/>
+# SafoneAPI
+
+Asynchronous Python Wrapper For SafoneAPI
+
+## Installation
+
+```sh
+pip install -U safoneapi
+```
+
+## Usage
+
+For example, to search on GitHub:
+
+```py
+import asyncio
+from SafoneAPI import SafoneAPI
+
+async def main():
+    api = SafoneAPI()
+    resp = await api.github("AsmSafone")
+    print(resp.results)
+
+asyncio.run(main())
+```
+
+## Documentation
+
+Take help from the docstrings this way:
+
+```py
+from SafoneAPI import SafoneAPI
+
+print(help(SafoneAPI.logo))
+```
+
+For more, check out the [API Playground](https://api.safone.dev/docs) or [Read Docs](https://api.safone.dev/redoc).
+
+## List of APIs
+
+- ASQ
+- Advice
+- Astronomy
+- AI Chatbot
+- Apps Search
+- Anime Search
+- Anime News (MAL)
+- Anime Pics (SFW & NSFW)
+- Bard AI Chatbot
+- Bin Info Search
+- Bing Image Search
+- Bing Image Creator
+- CC Generator
+- Carbon Imager
+- ChatGPT Chatbot
+- Character Search
+- Covid Info Search
+- Currency Converter
+- Country Info Search
+- Code Executor (Piston)
+- DALL-E Image Creator
+- Figlet Generator
+- Fake Info Generator
+- Google Search
+- Github Search
+- Global News (BBC)
+- Grammarly Checker
+- Google Translator
+- Google Image Search
+- IMDb Search
+- IP Fraud Checker
+- Internet Acronyms
+- Image Background Remover
+- LLama-2 AI
+- Logo Maker
+- Lyrics Search
+- Manga Search
+- Morse Code Encoder
+- Morse Code Decoder
+- Note Writer
+- NSFW Detector
+- Npm Package Search
+- OCR/ Text Reader
+- Paraphraser Tool
+- Proxy Finder (HTTP)
+- PyPi Package Search
+- Quotly Sticker
+- QR Code Generator
+- Reddit Search
+- Rayso Imager
+- Random Memes
+- Random Facts
+- Random Jokes
+- Random Bully
+- Random Quote
+- Spell Checker
+- Spam Detector
+- Special Pastebin
+- Stripe Key Checker
+- Song Finder (Shazam)
+- Short Link Bypasser
+- Short Link Generator
+- Stackoverflow Search
+- Spotify Song Search
+- TMDb Search
+- Torrent Search
+- Truth or Dare Game
+- Telegraph Pasting
+- Telegraph File Uploader
+- Telegram Sticker Search
+- Ubuntu Search
+- Unsplash Search
+- Udemy Course Finder
+- Urban Dictionary Search
+- Word Dictionary Search
+- Wallpaper Search
+- Wikipedia Search
+- Website Screenshot
+- Weather Information
+- Xda-developer Search
+- YouTube Video Search
+- YouTube Playlist Search
+
+## Note
+
+1. More features will be added soon.
+2. If you're stuck somewhere, [AsmSupport](https://t.me/AsmSupport) is there to help.
+3. If you have any suggestions or ideas, you can contact me on [Telegram](https://t.me/AsmSafone)

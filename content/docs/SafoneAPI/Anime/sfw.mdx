@@ -1,0 +1,46 @@
+---
+title: Anime (SFW) API - SafoneAPI
+description: Explore safe-for-work anime content using the SafoneAPI Anime (SFW) endpoint.
+---
+
+<Card title="Try It in Playground ➔" href="https://api.safone.dev/docs#/Anime/get_anime_sfw" />
+
+
+## Endpoint: `/anime/sfw`
+
+### Method: `GET`
+
+#### Responses
+
+- **200 - Success**
+  - Returns safe-for-work anime content.
+
+- **422 - Validation Error**
+  - Indicates a validation error in the request.
+
+## Example Usage
+
+To retrieve safe-for-work anime content using the Anime (SFW) API, you can use the following Python code:
+
+```python
+import asyncio
+from SafoneAPI import SafoneAPI
+
+async def main():
+    api = SafoneAPI()
+
+    try:
+        # Make the Anime (SFW) API request
+        response = await api.anime_sfw()
+
+        # Access the results
+        results = response.results
+        print(results)
+
+    except Exception as e:
+        # Handle errors
+        print(f"Error: {e}")
+
+# Run the example
+asyncio.run(main())
+```

@@ -1,0 +1,52 @@
+---
+title: ASQ API - SafoneAPI
+description: Explore the ASQ API provided by SafoneAPI for querying information.
+---
+
+<Card title="Try It in Playground ➔" href="https://api.safone.dev/docs#/Asq/get_asq" />
+
+## Endpoint: `/asq`
+
+### Method: `GET`
+
+#### Parameters
+
+- **query** (required): The query string for your search.
+
+### Responses
+
+- **200 - Success**
+  - Returns the requested information.
+
+- **422 - Validation Error**
+  - Indicates a validation error in the request.
+
+## Example Usage
+
+To search using the ASQ API, you can use the following Python code:
+
+```python
+import asyncio
+from SafoneAPI import SafoneAPI
+
+async def main():
+    api = SafoneAPI()
+    query = "your_search_query_here"
+
+    try:
+        # Make the ASQ API request
+        response = await api.asq(query)
+
+        # Access the results
+        results = response.results
+        print(results)
+
+    except Exception as e:
+        # Handle errors
+        print(f"Error: {e}")
+
+# Run the example
+asyncio.run(main())
+```
+
+### Feel free to use the "Try It in Playground" link to experiment with the ASQ API in the SafoneAPI playground.
