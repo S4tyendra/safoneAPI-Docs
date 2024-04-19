@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "14.0.4",
+    "next": "14.1.4",
     "next-docs-mdx": "6.1.0",
     "next-docs-ui": "6.1.0",
     "next-docs-zeta": "6.1.0",
